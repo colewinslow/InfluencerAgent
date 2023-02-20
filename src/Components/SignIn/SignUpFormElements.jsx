@@ -87,5 +87,6 @@ function SignUpFormElements() {
     </div>
   );
 }
+// Connecting influencers and businesses via a job board like search. Based on creator's audience to deliver a better advertising model
 
 export default SignUpFormElements;
