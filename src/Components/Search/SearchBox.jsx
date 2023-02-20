@@ -30,7 +30,7 @@ function SearchBox() {
         </div>
         <input
           className="w-[100%] lg:w-[75%] text-[14px] sm:text-[16px] p-4 pl-[50px]"
-          placeholder=" Search company name, deal type or keyword"
+          placeholder=" Search for company name, industry or keyword"
         />
         <div className="flex justify-center lg:justify-end items-center w-full lg:w-[200px]">
           <button className="gradient-dark px-10 w-full rounded-md py-4 shadow-md  mt-8 lg:mt-0 lg:ml-5 font-semibold  text-xs text-white">

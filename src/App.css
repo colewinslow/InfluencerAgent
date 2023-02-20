@@ -39,6 +39,30 @@ select {
   background-position: right 0.9rem top 50%;
   background-size: 0.65rem auto;
 }
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsla(272, 15%, 42%, 0.178);
+  }
+  100% {
+    background-color: hsla(271, 81%, 94%, 0.357);
+  }
+}
+
+.skeleton-text {
+  width: 90%;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.skeleton-text__body {
+  width: 95%;
+  height: 40px;
+}
 
 @layer components {
   .gradient-dark {

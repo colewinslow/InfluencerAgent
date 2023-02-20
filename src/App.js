@@ -6,6 +6,7 @@ import Search from "./Pages/Search";
 import HowItWorks from "./Pages/HowItWorks";
 import IAAdvertising from "./Pages/IAAdvertising";
 import SignIn from "./Pages/SignIn";
+import SignUp from "./Pages/SignUp";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/advertizing" element={<IAAdvertising />} />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
         </Routes>
       </main>
     </Router>

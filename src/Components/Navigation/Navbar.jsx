@@ -15,24 +15,24 @@ function Navbar() {
   return (
     <div
       className={`${
-        location.pathname === "/sign-in"
+        location.pathname === "/sign-in" || location.pathname === "/sign-up"
           ? "h-[100vh]"
           : "h-[400px] gradient-light"
       } gradient-light`}
     >
-      {" "}
-      {location.pathname === "/sign-in" && (
-        <div className="bg-white w-[0%] md:w-[60%] top-0 h-screen absolute z-0  right-0" />
+      {location.pathname === "/sign-in" || location.pathname === "/sign-up" ? (
+        <div className="bg-white hidden sm:flex w-[0%] md:w-[60%] top-0 h-screen absolute z-0  right-0"></div>
+      ) : (
+        <div></div>
       )}
-      <nav className="flex  py-5  w-full z-50 ">
-        {" "}
+      <nav className="flex   py-5  w-full z-50 ">
         <div className="flex w-[60%] sm:w-[55%] ml-24">
           <Link to="/" className="flex  items-center ">
             <img src={Logo} alt="Logo" />
           </Link>{" "}
           <LanguageChanger />
         </div>{" "}
-        <div className="md:flex  md:w-[55%] w-[45%] hidden  items-center justify-evenly  z-50 text-sm  mr-10  text-lightPurple">
+        <div className="md:flex  md:w-[55%] max-w-[600px] w-[45%] hidden  items-center justify-evenly  z-50 text-sm  mr-10  text-lightPurple">
           {Links.map(({ to, title, id }) => {
             return (
               <Link
@@ -84,7 +84,7 @@ function Navbar() {
         {OpenMenu && (
           <div
             onClick={() => setOpenMenu(!OpenMenu)}
-            className="flex flex-col h-[100vh] sm:hidden  bg-black/50 text-[#24292E] absolute z-20 top-[70px] w-full left-0"
+            className="flex flex-col h-[100vh] md:hidden  bg-black/50 text-[#24292E] absolute z-20 top-[70px] w-full left-0"
           >
             {" "}
             {Links.map(({ id, to, title }) => {
