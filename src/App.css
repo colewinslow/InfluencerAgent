@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+.active {
+  position: relative;
+}
+.active::after {
+  content: "";
+  position: absolute;
+  height: 0.5em;
+  width: 100%;
+  border-radius: 4px;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  background: linear-gradient(265.45deg, #4e1c95 4.75%, #7845c0 93.29%);
+}
+select {
+  /* Reset. */
+  border: unset;
+
+  /* Style */
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  /* Arrow */
+  appearance: none;
+
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem top 50%;
+  background-size: 0.65rem auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  .gradient-dark {
+    background: linear-gradient(265.45deg, #4e1c95 4.75%, #7845c0 93.29%);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .gradient-light {
+    background: linear-gradient(162.67deg, #f1f2f6 32.82%, #eeeef8 53.15%);
   }
-  to {
-    transform: rotate(360deg);
-  }
+  /* ... */
 }

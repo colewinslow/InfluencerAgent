@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navigation/Navbar";
+import Search from "./Pages/Search";
+import HowItWorks from "./Pages/HowItWorks";
+import IAAdvertising from "./Pages/IAAdvertising";
+import SignIn from "./Pages/SignIn";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <main className=" ml-10 mr-10 flex sm:ml-24 sm:mr-24 mt-[-320px] sm:mt-[-285px]  ">
+        <Routes>
+          <Route path="/" element={<Search />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/advertizing" element={<IAAdvertising />} />
+          <Route path="/sign-in" element={<SignIn />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
