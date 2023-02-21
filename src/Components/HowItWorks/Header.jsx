@@ -23,7 +23,7 @@ function Header() {
         <div className="bg-white w-full mb-10  sm:w-[550px] flex items-end  justify-center mr-10 h-[350px] rounded-md shadow-md">
           {" "}
           <button className="gradient-dark px-10 w-[90%]  mb-8 rounded-md py-4 shadow-md  mt-8 lg:mt-0  font-semibold  text-xs text-white">
-            Creators Looking Too Monetize
+            Businesses Looking to Advertize
           </button>
         </div>
       </div>
