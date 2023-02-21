@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <div className=" text-lightPurple">
-      <div className=" sm:ml-0 ml-8 w-[90%]">
+      <div className=" w-[90%]">
         <p className="text-[14px] sm:text-[16px]">
           Make money from your content, the right way!
         </p>

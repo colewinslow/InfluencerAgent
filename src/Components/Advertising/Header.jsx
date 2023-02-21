@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="w-full  text-lightPurple">
       {" "}
-      <div className="sm:ml-0 ml-8 w-[90%]">
+      <div className=" ">
         <p className="text-[14px] sm:text-[16px]">
           No matter the content, InfluencerAgent has you covered.
         </p>
