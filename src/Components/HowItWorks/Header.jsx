@@ -2,17 +2,19 @@ import React from "react";
 
 function Header() {
   return (
-    <div className=" w-full text-lightPurple">
-      <p className="text-[14px] sm:text-[16px]">
-        Make money from your content, the right way!
-      </p>
-      <h1 className=" text-[34px] lg:text-[45px] my-5 text-gray font-bold ">
-        How Does Influencer Agent Work?
-      </h1>
-      <p className="text-[14px] sm:text-[16px]">
-        We help influencers connect with businesses that share similar missions
-        and values
-      </p>
+    <div className=" text-lightPurple">
+      <div className=" ml-8 w-[90%]">
+        <p className="text-[14px] sm:text-[16px]">
+          Make money from your content, the right way!
+        </p>
+        <h1 className=" text-[34px] lg:text-[45px] my-5 text-gray font-bold ">
+          How Does Influencer Agent Work?
+        </h1>
+        <p className="text-[14px] sm:text-[16px]">
+          We help influencers connect with businesses that share similar
+          missions and values
+        </p>
+      </div>
       <div className="flex flex-col  flex-wrap md:flex-row item-center w-full mt-12 ">
         <div className="bg-white w-full mb-10  sm:w-[550px] flex items-end  justify-center mr-10 h-[350px] rounded-md shadow-md">
           {" "}

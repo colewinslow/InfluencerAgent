@@ -5,10 +5,10 @@ import SearchBox from "../Components/Search/SearchBox";
 
 function Search() {
   return (
-    <div className="flex-col  flex  item-center justify-center">
+    <div className="flex-col w-full  flex  item-center justify-center">
       <Header />
       <SearchBox />
-      <div className="mt-20 w-full">
+      <div className="mt-20 flex justify-center items-center w-[100%]">
         <DealList />
       </div>
     </div>

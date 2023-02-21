@@ -27,7 +27,7 @@ function Navbar() {
       )}
       <nav className="flex   py-5  w-full z-50 ">
         <div className="flex w-[60%] sm:w-[55%] ml-24">
-          <Link to="/" className="flex  items-center ">
+          <Link to="/" className="flex w-[200px] h--[60px]  items-center ">
             <img src={Logo} alt="Logo" />
           </Link>{" "}
           <LanguageChanger />

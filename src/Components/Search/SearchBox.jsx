@@ -2,8 +2,8 @@ import React from "react";
 
 function SearchBox() {
   return (
-    <div className="w-full flex  flex-col mt-12 shadow-md bg-white rounded-md items-center">
-      <div className="flex relative flex-wrap justify-evenly items-center p-4  w-full">
+    <div className="md:w-[70%] flex  flex-col mt-12 shadow-md bg-white rounded-md items-center">
+      <div className="flex relative flex-col sm:flex-row justify-evenly items-center p-4  w-full">
         <div className="absolute flex items-center z-0 top-[30px] left-[34px]">
           <svg
             width="24"
@@ -32,11 +32,10 @@ function SearchBox() {
           className="w-[100%] lg:w-[75%] text-[14px] sm:text-[16px] p-4 pl-[50px]"
           placeholder=" Search for company name, industry or keyword"
         />
-        <div className="flex justify-center lg:justify-end items-center w-full lg:w-[200px]">
-          <button className="gradient-dark px-10 w-full rounded-md py-4 shadow-md  mt-8 lg:mt-0 lg:ml-5 font-semibold  text-xs text-white">
-            SEARCH
-          </button>
-        </div>{" "}
+
+        <button className="gradient-dark px-10 w-full md:w-[200px] rounded-md py-4 shadow-md mt-5 md:mt-0  lg:ml-5 font-semibold  text-xs text-white">
+          SEARCH
+        </button>
       </div>
       <div className=" border-t flex items-center justify-evenly w-full border-t-accent p-4">
         <div className="flex-1 text-sm flex-col md:flex-row w-full text-DarkGrey">
