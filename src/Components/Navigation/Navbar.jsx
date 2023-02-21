@@ -26,7 +26,7 @@ function Navbar() {
         <div></div>
       )}
       <nav className="flex   py-5  w-full z-50 ">
-        <div className="flex w-[60%] sm:w-[55%] ml-24">
+        <div className="flex sm:w-[60%] w-[50%] ml-10 sm:ml-24">
           <Link to="/" className="flex w-[200px] h--[60px]  items-center ">
             <img src={Logo} alt="Logo" />
           </Link>{" "}
@@ -49,7 +49,7 @@ function Navbar() {
         </div>{" "}
         <div
           onClick={() => setOpenMenu(!OpenMenu)}
-          className="md:hidden flex items-center  justify-center w-[30%]  "
+          className="md:hidden flex items-center  justify-end w-[30%]  "
         >
           <svg
             width="21"

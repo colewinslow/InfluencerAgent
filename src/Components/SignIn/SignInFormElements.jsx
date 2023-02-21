@@ -52,14 +52,14 @@ function SignInFormElements() {
       </div>
       <div className="mt-8 flex flex-col w-full">
         <label className="font-bold ">Username or Email Address</label>
-        <input className="bg-[#f3f3f4] p-3 mt-2" />
+        <input className="bg-[#f3f3f4] p-2 mt-2 w-full rounded-lg" />
       </div>
       <div className="mt-5 flex flex-col relative ">
         <span className="absolute right-0 top-1 text-xs text-accent">
           Forgot Password?
         </span>
         <label className="font-bold ">Password</label>
-        <input className="bg-[#f3f3f4] p-3 mt-2 " />
+        <input className="bg-[#f3f3f4] p-2 mt-2 w-full rounded-lg" />
       </div>{" "}
       <button className="gradient-dark px-10 w-full mb-10 rounded-md py-4 shadow-md  mt-8 font-semibold  text-sm text-white">
         Sign In

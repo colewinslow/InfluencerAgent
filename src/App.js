@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <main className=" ml-4 mr-4 max-w-[1200px] flex sm:ml-24  sm:mr-24 mt-[-320px] sm:mt-[-285px]  ">
+      <main className=" ml-5 mr-5 max-w-[1200px] flex sm:ml-24  sm:mr-24 mt-[-320px] sm:mt-[-285px]  ">
         <Routes>
           <Route path="/" element={<Search />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
