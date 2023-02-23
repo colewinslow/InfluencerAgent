@@ -95,7 +95,7 @@ function Navbar() {
             {Links.map(({ id, to, title }) => {
               return (
                 <Link
-                  className={`p-5 px-8 text-[16px] border-accent  border-b-2 bg-[#fcfcfc] shadow-lg font-semibold w-full   mr-8 hover:bg-slate-200${
+                  className={`p-5 px-8 text-[14px] border-accent  border-b-2 bg-[#fcfcfc] shadow-lg font-semibold w-full   mr-8 hover:bg-slate-200${
                     location.pathname === to ? "active bg-light text-white" : ""
                   }`}
                   key={id}

@@ -3,11 +3,11 @@ import React from "react";
 function Header() {
   return (
     <div className=" text-lightPurple">
-      <div className=" w-[90%]">
+      <div className=" w-[100%]">
         <p className="text-[14px] sm:text-[16px]">
           Make money from your content, the right way!
         </p>
-        <h1 className=" text-[24px] lg:text-[45px]] my-5 text-gray font-bold ">
+        <h1 className=" text-[28px] lg:text-[45px] my-5 text-gray font-bold ">
           How Does Influencer Agent Work?
         </h1>
         <p className="text-[14px] sm:text-[16px]">
